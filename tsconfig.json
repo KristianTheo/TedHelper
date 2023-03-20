@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "rootDir": "./",
+    "outDir": "dist/js",
+    "noEmitOnError": true,
+    "types":  [ "chrome-types"],
+    "typeRoots": [ "node_modules/@types" ]
+  },
+  "files": ["background.ts",
+    "src/scripts/content-script.ts",
+    "src/popup/popup.ts"
+  ]
+}
+

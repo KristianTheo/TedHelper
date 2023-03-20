@@ -1,0 +1,21 @@
+{
+  "name": "TedHelper Beta",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "TedHelper.html",
+    "default_icon": "images/tedhelper32x32.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs","activeTab", "scripting", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["scripts/content-script.css"],
+      "js": ["scripts/content-script.js"]
+    }
+  ]
+}
